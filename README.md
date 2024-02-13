@@ -1,35 +1,14 @@
-# v14-met-api
+# MET API
 
-This template should help get you started developing with Vue 3 in Vite.
+This App is build with the Framework Vue.js.
+The task was to chose an API and fetch and visualize the data.
+Since I am an art enthusiast I was excited to find out that the
+Metropolitan Museum of Art New York offers a public RESTful API web service in JSON format including
+all digitalized objects of the museum's collection.
 
-## Recommended IDE Setup
+## random fetch of the digital collection of the Metropolitan Museum of Art New York
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+The App is still a work in progress. Aim is to show a random object
+of the collection by reloading the site. For now the shown object
+only changes by inserting an number between 1 and 470 000 manually inside the code.
+not every object has a picture yet.

@@ -6,14 +6,19 @@
 </template>
 
 <script>
+function randomizeInRange(min, max) {
+  return Math.floor(Math.random() * (max - min) + min)
+}
+
 export default {
   data() {
     return {
-      artObject: {}
+      artObject: {},
+      resultList: {}
     }
   },
-  async mounted() {
-    const randomNumber = 234
+  async created() {
+    const randomNumber = 2845
     const response = await fetch(
       'https://collectionapi.metmuseum.org/public/collection/v1/objects/' + randomNumber
     )
