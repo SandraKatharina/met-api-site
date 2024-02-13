@@ -12,3 +12,5 @@ The App is still a work in progress. Aim is to show a random object
 of the collection by reloading the site. For now the shown object
 only changes by inserting an number between 1 and 470 000 manually inside the code.
 not every object has a picture yet.
+
+The App is deployed via render: https://met-api-site.onrender.com
