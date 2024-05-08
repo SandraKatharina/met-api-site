@@ -1,8 +1,10 @@
 <template>
   <div>
     <h1>Title: {{ artObject.title }}, dated :{{ artObject.objectDate }}</h1>
+    <div v-if="artObject.primaryImageSmall.length == 0">Sorry no image</div>
+    <img v-else :src="artObject.primaryImageSmall" />
   </div>
-  <img :src="artObject.primaryImageSmall" />
+  <button @click="showRandomArtObject">SHOW ME SOMETHING RANDOM!</button>
 </template>
 
 <script>
