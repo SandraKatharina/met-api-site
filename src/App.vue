@@ -20,7 +20,7 @@ export default {
     }
   },
   async created() {
-    const randomNumber = 2845
+    const randomNumber = randomizeInRange(1, 470000)
     const response = await fetch(
       'https://collectionapi.metmuseum.org/public/collection/v1/objects/' + randomNumber
     )
